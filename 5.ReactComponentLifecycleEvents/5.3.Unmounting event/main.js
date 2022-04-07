@@ -5,11 +5,12 @@ class Time extends React.Component {
             time: (new Date()).toLocaleString()
         };
     }
-    
     updateTime = () => {
         this.setState({time: (new Date()).toLocaleString() });
     }
-    
+    componentWillUnmount() {
+        setTimeout(()=>alert('Goodbye Clock'),0)
+    }
     render() {
         return (
             <div>
@@ -20,7 +21,12 @@ class Time extends React.Component {
             </div>
       );
     }
-} 
+}
+const Empty = () => {
+    return <h1>This is empty</h1>
+}
 ReactDOM.render(
       <Time />, document.getElementById('content')
 )
+setTimeout( ()=> {
+	ReactDOM.render(<Empty />,document.getElementById('content'));}, 5000);
