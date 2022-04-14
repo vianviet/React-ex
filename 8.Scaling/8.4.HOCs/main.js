@@ -1,11 +1,3 @@
-class H1Element extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return <h1>{this.props.children}</h1>;
-  }
-}
 class Label extends React.Component {
   constructor(props) {
     super(props);
