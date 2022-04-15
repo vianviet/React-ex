@@ -8,7 +8,7 @@ const data = [
   { id: 6, name: "NodeJS" },
 ];
 
-function Main(props) {
+function RadioButton(props) {
   const [checked, setChecked] = useState([]);
   console.log(checked);
   function handleClick(id) {
@@ -37,4 +37,4 @@ function Main(props) {
     </div>
   );
 }
-export default Main;
+export default RadioButton;
