@@ -1,4 +1,4 @@
-const todos = (state = [], action) => {
+const todos = (state = ["hello", "Hi"], action) => {
     switch (action.type) {
         case 'LIST_TODO':
             return state;
