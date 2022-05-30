@@ -1,4 +1,4 @@
-const todos = (state = ["hello", "Hi"], action) => {
+const test = (state = "Welcome", action) => {
     switch (action.type) {
         case 'LIST_TODO':
             return state;
@@ -14,4 +14,4 @@ const todos = (state = ["hello", "Hi"], action) => {
 }
 
 
-export default todos;
+export default test;

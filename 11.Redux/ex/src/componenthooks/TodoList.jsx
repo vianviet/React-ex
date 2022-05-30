@@ -4,6 +4,7 @@ import { removeTodo } from "../action";
 import Todo from "../componenthooks/Todo";
 
 const TodoList = () => {
+  console.log("render todolist");
   const listTodo = useSelector((state) => state.todos);
   const dispatch = useDispatch();
   const handleRemove = useCallback(

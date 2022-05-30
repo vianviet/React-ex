@@ -1,12 +1,13 @@
 import "./App.css";
 // import AddTodo from "./componenthooks/AddTodo";
 import AddTodoReducer from "./componenthooks/AddTodoReducer";
+import TestRender from "./componenthooks/TestRender";
 // import TodoList from "./componenthooks/TodoList";
 
 function App() {
   return (
     <div className="App">
-      TodoList Redux with Hooks
+      <TestRender></TestRender>
       <AddTodoReducer />
       {/* <AddTodo/> */}
       {/* <TodoList /> */}

@@ -3,6 +3,7 @@ import { addTodo } from "../action";
 import todos from "../reducers/todos";
 
 const AddTodoReducer = () => {
+  console.log("render addtodoReducer");
   const [text, setText] = useState("");
   const [listTodo, dispatch] = useReducer(todos, ["Hi", "Hi2"]);
   const handleSubmit = (e) => {

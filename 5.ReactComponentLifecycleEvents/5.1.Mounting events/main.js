@@ -1,18 +1,23 @@
 class Mouting extends React.Component {
-    componentDidMount(){
-       setTimeout(()=>alert("did mount action after rendered"),0)
-    }
-    componentWillMount(){
-        alert("will mount action before render")
-    }
-    render() {
-        return (
-            <div>
-                <p>Hello I'm Render</p>
-            </div>
-      );
-    }
-} 
-ReactDOM.render(
-      <Mouting />, document.getElementById('content')
-)
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "none",
+    };
+  }
+  componentWillMount() {
+    setTimeout(() => this.setState({ text: "will mount" }), 3000);
+  }
+  componentDidMount() {
+    setTimeout(() => this.setState({ text: "did mount" }), 2000);
+  }
+
+  render() {
+    return (
+      <div>
+        <p>{this.state.text}</p>
+      </div>
+    );
+  }
+}
+ReactDOM.render(<Mouting />, document.getElementById("content"));

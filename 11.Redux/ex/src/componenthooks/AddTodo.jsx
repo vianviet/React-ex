@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { addTodo } from "../action";
 
 const AddTodo = () => {
+  console.log("render add todo");
   const [text, setText] = useState("");
   const dispatch = useDispatch();
   const handleSubmit = (e) => {

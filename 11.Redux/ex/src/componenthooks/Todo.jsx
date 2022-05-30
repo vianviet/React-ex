@@ -3,6 +3,7 @@
 import { memo } from "react";
 
 const Todo = (props) => {
+  console.log("render Todo");
   // const dispatch = useDispatch();
   return (
     <li>
