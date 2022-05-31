@@ -6,7 +6,7 @@ import { dataContextType, TableContext } from './Context/ContextProvider';
 import FormAdd from './components/FormAdd';
 
 function App() {
-  const {data, saveData} = useContext(TableContext) as dataContextType;
+  const {data} = useContext(TableContext) as dataContextType;
   return (
     <div className="App">
       <Table className='width-100' columns={columns} dataSource={data}></Table>

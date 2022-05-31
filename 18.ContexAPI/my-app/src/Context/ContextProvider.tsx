@@ -1,3 +1,4 @@
+import { getMaxListeners } from 'process';
 import React, { createContext, useState } from 'react'
 
 interface Idata {
@@ -5,6 +6,8 @@ interface Idata {
   name: string;
   age: number;
   address: string;
+  email : string;
+  gender : string;
 }
 export type dataContextType = {
   data: Idata[];
@@ -24,6 +27,8 @@ export default function ContextProvider({ children, ...props} : React.PropsWithC
     name: 'John Brown',
     age: 32,
     address: 'New York No. 1 Lake Park',
+    email : 'JB@gmail.com',
+    gender : 'male'
   },]);
   const saveData = (each: Idata) => {
     const newData: Idata = {
@@ -31,6 +36,8 @@ export default function ContextProvider({ children, ...props} : React.PropsWithC
       name: each.name,
       age: each.age,
       address: each.address,
+      email : each.email,
+      gender : each.gender
     };
     setData([...data, newData]);
   };

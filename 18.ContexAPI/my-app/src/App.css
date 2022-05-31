@@ -15,3 +15,23 @@ body {
 .width-100 {
     width: 100%;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.color-red {
+    color: red;
+}
+
+.column-gap-10 {
+    column-gap: 10px;
+}
+
+.width-50vh {
+    width: 50vh;
+}

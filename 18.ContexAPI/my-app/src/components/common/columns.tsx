@@ -16,6 +16,16 @@ const columns = [
       dataIndex: 'address',
       key: 'address',
     },
+    {
+      title: 'Email',
+      dataIndex: 'email',
+      key: 'email',
+    },
+    {
+      title: 'Gender',
+      dataIndex: 'gender',
+      key: 'gender',
+    }
     // {
     //   title: 'Action',
     //   key: 'action',
